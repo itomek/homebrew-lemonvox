@@ -15,7 +15,8 @@ cask "lemonvox" do
   caveats <<~EOS
     Requires Lemonade installed and running separately (tested with 2026.44.1).
     Choose transcription and cleanup models in Settings.
-    macOS will request microphone and Accessibility permissions for dictation.
+    Grant microphone access when requested. Enable the app manually in
+    System Settings > Privacy & Security > Accessibility, then relaunch.
     This early release installs as LemonVox Prototype.app.
   EOS
 end
