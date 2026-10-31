@@ -8,7 +8,7 @@ cask "lemonvox" do
   homepage "https://github.com/itomek/lemonvox"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "LemonVox Prototype.app"
 
