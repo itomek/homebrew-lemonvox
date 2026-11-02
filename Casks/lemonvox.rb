@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "lemonvox" do
-  version "0.3.0"
-  sha256 "72bebbd0561c1858881dcea09605ddb0b7bf137331d8a5cadb797e946c0cffca"
+  version "0.4.0"
+  sha256 "650db4ace8b58132169a5eabc4b6c712c8c7874dcb4dc3bbeb7b1a176c0af2eb"
 
   url "https://github.com/itomek/lemonvox/releases/download/v#{version}/LemonVox-#{version}-arm64.zip"
   name "LemonVox"
