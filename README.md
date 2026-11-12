@@ -12,7 +12,7 @@ Homebrew 7 requires an explicit trust decision for third-party casks. The comman
 
 Requires Apple silicon and macOS 26 or later. The app installs as **LemonVox.app**.
 
-Install and run [Lemonade](https://lemonade-server.ai/) separately; version 2026.44.1 is the tested baseline. Select transcription and cleanup models in LemonVox Settings. Grant microphone consent when starting dictation. Use **Settings → Diagnostics → Accessibility…** for macOS input and paste permissions. This tap does not install models or manage Lemonade.
+Install and run [Lemonade](https://lemonade-server.ai/) or another compatible OpenAI API server separately; version 2026.44.1 is the tested baseline. Select transcription and cleanup models in LemonVox Settings. Grant microphone consent when starting dictation. Use **Settings → Diagnostics → Accessibility…** for macOS input and paste permissions. The server must expose a local or remote HTTP/HTTPS endpoint ending in `/v1`, with audio transcription, chat completion, and compatible model-discovery metadata. A chat-only OpenAI-compatible endpoint is insufficient. This tap does not install a server or models.
 
 [Source and releases](https://github.com/itomek/lemonvox)
 
