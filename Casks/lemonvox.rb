@@ -6,7 +6,7 @@ cask "lemonvox" do
 
   url "https://github.com/itomek/lemonvox/releases/download/v#{version}/LemonVox-#{version}-arm64.zip"
   name "LemonVox"
-  desc "Native dictation client for Lemonade"
+  desc "Dictation client for an OpenAI-compatible server"
   homepage "https://github.com/itomek/lemonvox"
 
   auto_updates true
@@ -16,7 +16,10 @@ cask "lemonvox" do
   app "LemonVox.app"
 
   caveats <<~EOS
-    Requires Lemonade installed and running separately (tested with 2026.44.1).
+    Requires Lemonade or another compatible OpenAI API server running separately.
+    Current builds require a local loopback endpoint, transcription and chat
+    completion models, and compatible model-discovery metadata. Chat-only
+    OpenAI compatibility is insufficient. Tested with Lemonade 2026.44.1.
     Choose transcription and cleanup models in Settings.
     Grant microphone consent when starting dictation. Use Settings > Diagnostics >
     Accessibility... for macOS input and paste permissions.
